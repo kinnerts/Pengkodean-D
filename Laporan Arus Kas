@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id"> <!-- Menyatakan bahwa ini adalah dokumen HTML5 dengan bahasa Indonesia -->
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur encoding karakter ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur responsivitas halaman -->
+    <title>Laporan Arus Kas</title> <!-- Judul halaman yang muncul di tab browser -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Mengatur font untuk seluruh halaman */
+            max-width: 600px; /* Menentukan lebar maksimum konten */
+            margin: 0 auto; /* Menempatkan konten di tengah layar */
+            padding: 20px; /* Memberikan ruang di dalam elemen body */
+            background-color: #f8f8f8; /* Mengatur warna latar belakang */
+        }
+        .header {
+            text-align: center; /* Menengahkan teks di dalam header */
+            margin-bottom: 20px; /* Memberi jarak antara header dan isi */
+        }
+        .section {
+            margin-bottom: 20px; /* Memberi jarak antar bagian laporan */
+        }
+        .row {
+            display: flex; /* Menggunakan flexbox untuk tata letak baris */
+            justify-content: space-between; /* Menyusun elemen di kiri dan kanan */
+            padding: 5px 0; /* Memberikan ruang vertikal dalam baris */
+        }
+        .indent {
+            margin-left: 20px; /* Menambah indentasi untuk sub-item */
+        }
+        .total {
+            font-weight: bold; /* Menebalkan teks untuk total */
+            border-top: 2px solid black; /* Menambahkan garis pemisah di atas total */
+            padding-top: 5px; /* Memberikan ruang di atas total */
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> <!-- Bagian header laporan -->
+        <h2>Manajemen Keuangan Network</h2> <!-- Judul utama laporan -->
+        <h3>Laporan Arus Kas</h3> <!-- Subjudul laporan -->
+        <p>Untuk bulan yang berakhir pada 31 Januari 2019</p> <!-- Informasi periode laporan -->
+    </div>
+
+    <div class="section"> <!-- Bagian arus kas dari aktivitas operasi -->
+        <strong>Arus kas dari aktivitas operasi</strong>
+        <div class="row indent"> <!-- Baris pertama dengan indentasi -->
+            <span>Kas yang diterima dari pelanggan</span>
+            <span>Rp 7.500.000</span> <!-- Jumlah kas yang diterima -->
+        </div>
+        <div class="row indent"> <!-- Baris kedua dengan indentasi -->
+            <span>Dikurangi pembayaran kas untuk beban dan kreditor</span>
+            <span>(4.600.000)</span> <!-- Jumlah pengeluaran -->
+        </div>
+        <div class="row total"> <!-- Baris total arus kas dari operasi -->
+            <span>Arus kas bersih dari kegiatan operasi</span>
+            <span>Rp 2.900.000</span> <!-- Total arus kas bersih -->
+        </div>
+    </div>
+
+    <div class="section"> <!-- Bagian arus kas dari kegiatan investasi -->
+        <strong>Arus kas dari kegiatan investasi</strong>
+        <div class="row indent"> <!-- Baris untuk pengeluaran investasi -->
+            <span>Pembayaran kas untuk pembelian tanah</span>
+            <span>(20.000.000)</span> <!-- Jumlah pengeluaran untuk tanah -->
+        </div>
+    </div>
+
+    <div class="section"> <!-- Bagian arus kas dari kegiatan pendanaan -->
+        <strong>Arus kas dari kegiatan pendanaan</strong>
+        <div class="row indent"> <!-- Baris pertama untuk pemasukan pendanaan -->
+            <span>Kas yang diterima dari investasi pemilik</span>
+            <span>Rp 25.000.000</span> <!-- Jumlah kas yang diterima -->
+        </div>
+        <div class="row indent"> <!-- Baris kedua untuk pengeluaran pendanaan -->
+            <span>Dikurangi prive</span>
+            <span>(2.000.000)</span> <!-- Jumlah pengeluaran untuk prive -->
+        </div>
+        <div class="row total"> <!-- Baris total arus kas dari pendanaan -->
+            <span>Arus kas bersih dari kegiatan pendanaan</span>
+            <span>Rp 23.000.000</span> <!-- Total arus kas bersih dari pendanaan -->
+        </div>
+    </div>
+
+    <div class="row total"> <!-- Baris total arus kas bersih keseluruhan -->
+        <span>Arus kas bersih dan saldo kas: 31 Januari 2019</span>
+        <span>Rp 5.900.000</span> <!-- Total saldo kas akhir -->
+    </div>
+</body>
+</html>
