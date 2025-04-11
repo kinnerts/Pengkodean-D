@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Mengatur tampilan header */
+        .header {
+            background-color: darkgreen;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header h2 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .header h3 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 18px;
+        }
+        /* Mengatur tampilan laporan keuangan */
+        .statement {
+            width: 100%;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        .indent {
+            margin-left: 20px; /* Memberikan indentasi pada subkategori */
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .total {
+            border-top: 1px solid black;
+            margin-top: 10px;
+            padding-top: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .amount {
+            text-align: right;
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Laporan -->
+    <div class="header">
+        <h1>PT Karya Kusuma</h1>
+        <h2>LAPORAN POSISI KEUANGAN</h2>
+        <h3>Periode Oktober 2023</h3>
+    </div>
+
+    <div class="statement">
+        <!-- Bagian Aset -->
+        <div class="section">
+            <div class="row bold">
+                <span>ASET</span>
+            </div>
+            <div class="row bold">
+                <span>Aset Lancar</span>
+            </div>
+            <div class="row indent">
+                <span>Kas</span>
+                <span class="amount">26.550.000</span>
+            </div>
+            <div class="row indent">
+                <span>Bank</span>
+                <span class="amount">57.250.000</span>
+            </div>
+            <div class="row indent">
+                <span>Piutang Lain-lain</span>
+                <span class="amount">32.000.000</span>
+            </div>
+            <div class="row indent">
+                <span>Persediaan</span>
+                <span class="amount">132.500.000</span>
+            </div>
+            <div class="row indent">
+                <span>Biaya Dibayar di Muka</span>
+                <span class="amount">38.918.550</span>
+            </div>
+            <div class="row indent total bold">
+                <span>Jumlah Aset Lancar</span>
+                <span class="amount">287.218.550</span>
+            </div>
+        </div>
+
+        <!-- Bagian Aset Tidak Lancar -->
+        <div class="section">
+            <div class="row bold">
+                <span>Aset Tidak Lancar</span>
+            </div>
+            <div class="row indent">
+                <span>Inventaris</span>
+                <span class="amount">275.850.000</span>
+            </div>
+            <div class="row indent">
+                <span>Akumulasi Penyusutan Aset Tetap</span>
+                <span class="amount">(4.750.000)</span>
+            </div>
+            <div class="row indent total bold">
+                <span>Jumlah Aset Tidak Lancar</span>
+                <span class="amount">271.100.000</span>
+            </div>
+        </div>
+
+        <!-- Total Aset -->
+        <div class="row total bold">
+            <span>TOTAL ASET</span>
+            <span class="amount">558.318.550</span>
+        </div>
+
+        <!-- Bagian Kewajiban dan Ekuitas -->
+        <div class="section" style="margin-top: 30px;">
+            <div class="row bold">
+                <span>KEWAJIBAN DAN EKUITAS</span>
+            </div>
+            <div class="row bold">
+                <span>Kewajiban Jangka Pendek</span>
+            </div>
+            <div class="row indent">
+                <span>Utang Usaha</span>
+                <span class="amount">272.800.000</span>
+            </div>
+        </div>
+
+        <!-- Bagian Ekuitas -->
+        <div class="section">
+            <div class="row bold">
+                <span>Ekuitas</span>
+            </div>
+            <div class="row indent">
+                <span>Modal Disetor</span>
+                <span class="amount">60.000.000</span>
+            </div>
+            <div class="row indent">
+                <span>Laba Ditahan</span>
+                <span class="amount">225.518.550</span>
+            </div>
+            <div class="row indent total bold">
+                <span>Jumlah Ekuitas</span>
+                <span class="amount">285.518.550</span>
+            </div>
+        </div>
+
+        <!-- Total Kewajiban dan Ekuitas -->
+        <div class="row total bold">
+            <span>TOTAL KEWAJIBAN DAN EKUITAS</span>
+            <span class="amount">558.318.550</span>
+        </div>
+    </div>
+</body>
+</html>
